@@ -1,0 +1,14 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the WebView extension on iphone
+
+platform IPHONE
+
+options
+{
+    lib
+    output-name="lib/iphone/libWebView.a"
+    output-name-debug="lib/iphone/libWebView_d.a"
+}
+define S3E_BUILD_EXT
+
+subproject WebView_build
